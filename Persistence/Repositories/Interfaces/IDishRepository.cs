@@ -8,8 +8,8 @@ namespace dotnet_api_test.Persistence.Repositories.Interfaces
         IEnumerable<Dish> GetAllDishes();
         dynamic? GetAverageDishPrice();
         Dish GetDishById(int Id);
-        void DeleteDishById(int Id);
+        bool DeleteDishById(int Id);
         Dish CreateDish(Dish dish);
-        Dish UpdateDish(Dish dish);
+        Dish UpdateDish(int id, Dish dish);
     }
 }
